@@ -1,6 +1,7 @@
-package utils;
+package arm_sertif.utils;
 
-import java.awt.*;
+import java.awt.Dimension;
+import java.awt.Toolkit;
 
 /**
  * Created by sergius on 06.09.15.
