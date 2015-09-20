@@ -1,5 +1,6 @@
 package arm_sertif.forms.mainform;
 
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -8,19 +9,23 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
+import arm_sertif.utils.Display;
+
 public class MainForm extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	// private final static int WIDTH = 300;
-	// private final static int HEIGHT = 500;
+	private final static int WIDTH = 291;
+	private final static int HEIGHT = 333;
 
 	/**
 	 * Create the frame.
 	 */
 	public MainForm() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 299, 333);
+		Dimension center = Display.windowCenter(WIDTH, HEIGHT);
+		setSize(WIDTH, HEIGHT);
+		setLocation(center.width, center.height);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
